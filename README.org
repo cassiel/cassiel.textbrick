@@ -1,0 +1,6 @@
+-*- mode: org; mode: visual-line; -*-
+#+STARTUP: indent
+
+* textbrick
+
+Text Brick UI object for Max/MSP
