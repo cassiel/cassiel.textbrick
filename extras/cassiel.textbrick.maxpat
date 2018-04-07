@@ -2,10 +2,10 @@
 	"patcher" : 	{
 		"fileversion" : 1,
 		"appversion" : 		{
-			"major" : 8,
-			"minor" : 0,
-			"revision" : 0,
-			"architecture" : "x86",
+			"major" : 7,
+			"minor" : 3,
+			"revision" : 5,
+			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
@@ -47,14 +47,14 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
-							"architecture" : "x86",
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1016.0, 270.0, 347.0, 494.0 ],
+						"rect" : [ 110.0, 294.0, 673.0, 512.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -83,6 +83,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 374.0, 46.0, 145.0, 22.0 ],
+									"style" : "",
+									"text" : "read cassiel.textbrick-MS"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"fontname" : "Monaco",
 									"fontsize" : 9.0,
 									"id" : "obj-1",
@@ -90,8 +103,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 184.0, 215.0, 70.0, 0.0 ],
-									"presentation_rect" : [ 184.0, 215.0, 70.0, 0.0 ],
+									"patching_rect" : [ 184.0, 215.0, 70.0, 20.0 ],
 									"style" : "",
 									"text" : "loadmess 1"
 								}
@@ -106,21 +118,20 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 184.0, 255.0, 64.0, 0.0 ],
-									"presentation_rect" : [ 184.0, 255.0, 64.0, 0.0 ],
+									"patching_rect" : [ 184.0, 255.0, 64.0, 20.0 ],
 									"restore" : 									{
 										"MULTISLIDEREXAMPLE" : [ "TextBrick.PATTR.1", 10, 1, "OSC", 1, "FM", 1, "WG", 1, "VCF", 1, "VCA", 1, "ENV", 2, "LFO", 1, 2, "LFO", 2, 2, "BBC", "TV", 1, "CSI:NY" ]
 									}
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u620000847"
+									"varname" : "u735001055"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"autorestore" : "gui.TextBrickHelp-MS.xml",
+									"autorestore" : "cassiel.textbrick-MS.xml",
 									"fontname" : "Monaco",
 									"fontsize" : 9.0,
 									"id" : "obj-3",
@@ -128,12 +139,11 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 184.0, 235.0, 100.0, 0.0 ],
-									"presentation_rect" : [ 184.0, 235.0, 100.0, 0.0 ],
+									"patching_rect" : [ 184.0, 235.0, 100.0, 20.0 ],
 									"saved_object_attributes" : 									{
-										"client_rect" : [ 0, 0, 640, 240 ],
+										"client_rect" : [ 4, 44, 358, 172 ],
 										"parameter_enable" : 0,
-										"storage_rect" : [ 10, 59, 650, 299 ]
+										"storage_rect" : [ 583, 69, 1034, 197 ]
 									}
 ,
 									"style" : "",
@@ -146,7 +156,7 @@
 								"box" : 								{
 									"border" : 0,
 									"embedstate" : [ [ "setdirection", "up" ], [ "setalignment", "left" ], [ "setfont", "Monaco", 9 ], [ "nativeFRGB", 1, 1, 1 ], [ "nativeBRGB", 0, 0.278431, 0.4 ] ],
-									"filename" : "net.loadbang.gui.TextBrick.js",
+									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-4",
 									"maxclass" : "jsui",
 									"numinlets" : 1,
@@ -169,8 +179,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 182.0, 84.0, 58.0, 0.0 ],
-									"presentation_rect" : [ 182.0, 84.0, 58.0, 0.0 ],
+									"patching_rect" : [ 182.0, 84.0, 58.0, 20.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -185,8 +194,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 247.0, 422.0, 34.0, 0.0 ],
-									"presentation_rect" : [ 247.0, 422.0, 34.0, 0.0 ],
+									"patching_rect" : [ 247.0, 422.0, 34.0, 20.0 ],
 									"style" : "",
 									"text" : "!- 9"
 								}
@@ -201,8 +209,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 199.0, 442.0, 106.0, 0.0 ],
-									"presentation_rect" : [ 199.0, 442.0, 106.0, 0.0 ],
+									"patching_rect" : [ 199.0, 442.0, 106.0, 20.0 ],
 									"style" : "",
 									"text" : "pack setitem 0 0"
 								}
@@ -212,7 +219,7 @@
 								"box" : 								{
 									"border" : 0,
 									"embedstate" : [ [ "setdirection", "down" ], [ "setalignment", "left" ], [ "setfont", "Monaco", 9 ], [ "nativeFRGB", 0.980392, 1, 0.196078 ], [ "nativeBRGB", 0, 0.278431, 0.4 ] ],
-									"filename" : "net.loadbang.gui.TextBrick.js",
+									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-8",
 									"maxclass" : "jsui",
 									"numinlets" : 1,
@@ -233,8 +240,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 36.0, 440.0, 106.0, 0.0 ],
-									"presentation_rect" : [ 36.0, 440.0, 106.0, 0.0 ],
+									"patching_rect" : [ 36.0, 440.0, 106.0, 20.0 ],
 									"style" : "",
 									"text" : "pack setitem 0 0"
 								}
@@ -249,8 +255,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "int" ],
-									"patching_rect" : [ 134.0, 307.0, 52.0, 0.0 ],
-									"presentation_rect" : [ 134.0, 307.0, 52.0, 0.0 ],
+									"patching_rect" : [ 134.0, 307.0, 52.0, 20.0 ],
 									"style" : "",
 									"text" : "t b b i"
 								}
@@ -265,8 +270,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 91.0, 244.0, 40.0, 0.0 ],
-									"presentation_rect" : [ 91.0, 244.0, 40.0, 0.0 ],
+									"patching_rect" : [ 91.0, 244.0, 40.0, 20.0 ],
 									"style" : "",
 									"text" : "t l b"
 								}
@@ -281,8 +285,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 121.0, 281.0, 40.0, 0.0 ],
-									"presentation_rect" : [ 121.0, 281.0, 40.0, 0.0 ],
+									"patching_rect" : [ 121.0, 281.0, 40.0, 20.0 ],
 									"style" : "",
 									"text" : "set 0"
 								}
@@ -297,8 +300,7 @@
 									"numinlets" : 5,
 									"numoutlets" : 4,
 									"outlettype" : [ "int", "", "", "int" ],
-									"patching_rect" : [ 121.0, 382.0, 66.0, 0.0 ],
-									"presentation_rect" : [ 121.0, 382.0, 66.0, 0.0 ],
+									"patching_rect" : [ 121.0, 382.0, 66.0, 20.0 ],
 									"style" : "",
 									"text" : "counter"
 								}
@@ -313,8 +315,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 85.0, 280.0, 34.0, 0.0 ],
-									"presentation_rect" : [ 85.0, 280.0, 34.0, 0.0 ],
+									"patching_rect" : [ 85.0, 280.0, 34.0, 20.0 ],
 									"style" : "",
 									"text" : "iter"
 								}
@@ -330,8 +331,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 182.0, 106.0, 112.0, 0.0 ],
-									"presentation_rect" : [ 182.0, 106.0, 112.0, 0.0 ],
+									"patching_rect" : [ 182.0, 106.0, 112.0, 20.0 ],
 									"style" : "",
 									"text" : "setsize 10, clear"
 								}
@@ -341,7 +341,7 @@
 								"box" : 								{
 									"border" : 0,
 									"embedstate" : [ [ "setdirection", "up" ], [ "setalignment", "left" ], [ "setfont", "Monaco", 9 ], [ "nativeFRGB", 0.980392, 1, 0.196078 ], [ "nativeBRGB", 0, 0.278431, 0.4 ] ],
-									"filename" : "net.loadbang.gui.TextBrick.js",
+									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-16",
 									"maxclass" : "jsui",
 									"numinlets" : 1,
@@ -363,7 +363,6 @@
 									"candicane6" : [ 0.733333, 0.035294, 0.788235, 1.0 ],
 									"candicane7" : [ 0.878431, 0.243137, 0.145098, 1.0 ],
 									"candicane8" : [ 0.027451, 0.447059, 0.501961, 1.0 ],
-									"contdata" : 1,
 									"ghostbar" : 20,
 									"id" : "obj-17",
 									"maxclass" : "multislider",
@@ -406,14 +405,13 @@
 									"fontname" : "Monaco",
 									"fontsize" : 9.0,
 									"id" : "obj-19",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 181.0, 134.0, 100.0, 0.0 ],
-									"presentation_rect" : [ 181.0, 134.0, 100.0, 0.0 ],
+									"patching_rect" : [ 181.0, 134.0, 106.0, 51.0 ],
 									"style" : "",
-									"text" : "Refresh a bit sluggish: multiSlider sends all values at once!"
+									"text" : "Refresh on mouse-up for performance reasons"
 								}
 
 							}
@@ -426,8 +424,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 201.0, 344.0, 97.0, 0.0 ],
-									"presentation_rect" : [ 201.0, 344.0, 97.0, 0.0 ],
+									"patching_rect" : [ 201.0, 344.0, 100.0, 63.0 ],
 									"style" : "",
 									"text" : "Items ordered by the sense of the text (so direction=down means R-to-L)"
 								}
@@ -442,8 +439,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 207.0, 278.0, 90.0, 0.0 ],
-									"presentation_rect" : [ 207.0, 278.0, 90.0, 0.0 ],
+									"patching_rect" : [ 207.0, 278.0, 90.0, 29.0 ],
 									"style" : "",
 									"text" : "Labels stored in pattr"
 								}
@@ -569,6 +565,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-15", 0 ],
 									"hidden" : 1,
 									"source" : [ "obj-5", 0 ]
@@ -682,10 +685,10 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
-							"architecture" : "x86",
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -726,7 +729,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 50.0, 51.0, 58.0, 0.0 ],
-									"presentation_rect" : [ 50.0, 51.0, 58.0, 0.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -743,7 +745,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 119.0, 161.0, 0.0 ],
-									"presentation_rect" : [ 50.0, 119.0, 161.0, 0.0 ],
 									"style" : "",
 									"text" : "setsize 1, clear, append CASSIEL: Listen/Move"
 								}
@@ -759,7 +760,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 227.0, 123.0, 82.0, 0.0 ],
-									"presentation_rect" : [ 227.0, 123.0, 82.0, 0.0 ],
 									"style" : "",
 									"text" : "route symbol"
 								}
@@ -775,7 +775,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 323.0, 154.0, 94.0, 0.0 ],
-									"presentation_rect" : [ 323.0, 154.0, 94.0, 0.0 ],
 									"style" : "",
 									"text" : "prepend append"
 								}
@@ -804,7 +803,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 80.0, 173.0, 112.0, 0.0 ],
-									"presentation_rect" : [ 80.0, 173.0, 112.0, 0.0 ],
 									"style" : "",
 									"text" : "setsize 17, clear"
 								}
@@ -820,7 +818,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "bang" ],
 									"patching_rect" : [ 50.0, 92.0, 40.0, 0.0 ],
-									"presentation_rect" : [ 50.0, 92.0, 40.0, 0.0 ],
 									"style" : "",
 									"text" : "t b b"
 								}
@@ -836,7 +833,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 227.0, 154.0, 94.0, 0.0 ],
-									"presentation_rect" : [ 227.0, 154.0, 94.0, 0.0 ],
 									"style" : "",
 									"text" : "prepend append"
 								}
@@ -852,7 +848,6 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "bang", "bang", "int" ],
 									"patching_rect" : [ 191.0, 77.0, 46.0, 0.0 ],
-									"presentation_rect" : [ 191.0, 77.0, 46.0, 0.0 ],
 									"style" : "",
 									"text" : "Uzi 17"
 								}
@@ -868,13 +863,12 @@
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 227.0, 99.0, 190.0, 0.0 ],
-									"presentation_rect" : [ 227.0, 99.0, 190.0, 0.0 ],
 									"saved_object_attributes" : 									{
 										"embed" : 0
 									}
 ,
 									"style" : "",
-									"text" : "coll gui.TextBrickHelp-LM.coll"
+									"text" : "coll cassiel.textbrick-LM.coll"
 								}
 
 							}
@@ -888,7 +882,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 265.0, 36.0, 178.0, 0.0 ],
-									"presentation_rect" : [ 265.0, 36.0, 178.0, 0.0 ],
 									"style" : "",
 									"text" : "A hand-rolled example (although it's easier to put the content into a pattr)."
 								}
@@ -1146,10 +1139,10 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
-							"architecture" : "x86",
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1184,7 +1177,7 @@
 								"box" : 								{
 									"border" : 0,
 									"embedstate" : [ [ "setdirection", "right" ], [ "setalignment", "right" ], [ "setfont", "Impact", 12 ], [ "nativeFRGB", 1, 1, 1 ], [ "nativeBRGB", 0.533333, 0.533333, 0.533333 ] ],
-									"filename" : "net.loadbang.gui.TextBrick.js",
+									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-1",
 									"maxclass" : "jsui",
 									"numinlets" : 1,
@@ -1206,7 +1199,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 23.0, 59.0, 280.0, 0.0 ],
-									"presentation_rect" : [ 23.0, 59.0, 280.0, 0.0 ],
 									"style" : "",
 									"text" : "setsize 1, clear, append Big Friendly Buttons"
 								}
@@ -1222,7 +1214,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 23.0, 37.0, 58.0, 0.0 ],
-									"presentation_rect" : [ 23.0, 37.0, 58.0, 0.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -1238,7 +1229,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 104.0, 343.0, 34.0, 0.0 ],
-									"presentation_rect" : [ 104.0, 343.0, 34.0, 0.0 ],
 									"style" : "",
 									"text" : "$1 1"
 								}
@@ -1254,7 +1244,6 @@
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
 									"patching_rect" : [ 240.0, 105.0, 66.0, 0.0 ],
-									"presentation_rect" : [ 240.0, 105.0, 66.0, 0.0 ],
 									"style" : "",
 									"text" : "spray 5"
 								}
@@ -1274,7 +1263,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 104.0, 318.0, 27.0, 0.0 ],
-									"presentation_rect" : [ 104.0, 318.0, 27.0, 0.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triangle" : 0,
@@ -1292,7 +1280,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 124.0, 105.0, 14.0, 0.0 ],
-									"presentation_rect" : [ 124.0, 105.0, 14.0, 0.0 ],
 									"style" : "",
 									"text" : "0"
 								}
@@ -1308,7 +1295,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "bang" ],
 									"patching_rect" : [ 104.0, 294.0, 40.0, 0.0 ],
-									"presentation_rect" : [ 104.0, 294.0, 40.0, 0.0 ],
 									"style" : "",
 									"text" : "t i b"
 								}
@@ -1325,7 +1311,7 @@
 									"id" : "obj-9",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "gui.TextBrick-LabelClicker.mxt",
+									"name" : "cassiel.textbrick.label-clicker.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ -208.0, -139.0 ],
@@ -1347,7 +1333,7 @@
 									"id" : "obj-10",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "gui.TextBrick-LabelClicker.mxt",
+									"name" : "cassiel.textbrick.label-clicker.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ -208.0, -139.0 ],
@@ -1369,7 +1355,7 @@
 									"id" : "obj-11",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "gui.TextBrick-LabelClicker.mxt",
+									"name" : "cassiel.textbrick.label-clicker.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ -208.0, -139.0 ],
@@ -1391,7 +1377,7 @@
 									"id" : "obj-12",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "gui.TextBrick-LabelClicker.mxt",
+									"name" : "cassiel.textbrick.label-clicker.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ -208.0, -139.0 ],
@@ -1413,7 +1399,7 @@
 									"id" : "obj-13",
 									"lockeddragscroll" : 0,
 									"maxclass" : "bpatcher",
-									"name" : "gui.TextBrick-LabelClicker.mxt",
+									"name" : "cassiel.textbrick.label-clicker.maxpat",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"offset" : [ -208.0, -139.0 ],
@@ -1434,7 +1420,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 185.0, 266.0, 100.0, 0.0 ],
-									"presentation_rect" : [ 185.0, 266.0, 100.0, 0.0 ],
 									"style" : "",
 									"text" : "This will probably look a bit crap if you don't have the Impact font"
 								}
@@ -1544,7 +1529,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
 									"hidden" : 1,
-									"order" : 1,
+									"order" : 4,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -1553,7 +1538,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-11", 0 ],
 									"hidden" : 1,
-									"order" : 2,
+									"order" : 3,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -1562,7 +1547,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
 									"hidden" : 1,
-									"order" : 3,
+									"order" : 2,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -1571,7 +1556,7 @@
 								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
 									"hidden" : 1,
-									"order" : 4,
+									"order" : 1,
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -1637,10 +1622,10 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
-							"architecture" : "x86",
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -1680,8 +1665,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 191.0, 296.0, 124.0, 0.0 ],
-									"presentation_rect" : [ 191.0, 296.0, 124.0, 0.0 ],
+									"patching_rect" : [ 191.0, 296.0, 124.0, 20.0 ],
 									"style" : "",
 									"text" : "setitem 13 DREIZEHN"
 								}
@@ -1696,8 +1680,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 191.0, 279.0, 94.0, 0.0 ],
-									"presentation_rect" : [ 191.0, 279.0, 94.0, 0.0 ],
+									"patching_rect" : [ 191.0, 279.0, 94.0, 20.0 ],
 									"style" : "",
 									"text" : "setitem 3 TROI"
 								}
@@ -1712,8 +1695,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 191.0, 262.0, 88.0, 0.0 ],
-									"presentation_rect" : [ 191.0, 262.0, 88.0, 0.0 ],
+									"patching_rect" : [ 191.0, 262.0, 88.0, 20.0 ],
 									"style" : "",
 									"text" : "setitem 1 ONE"
 								}
@@ -1733,8 +1715,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 191.0, 47.0, 35.0, 0.0 ],
-									"presentation_rect" : [ 191.0, 47.0, 35.0, 0.0 ],
+									"patching_rect" : [ 191.0, 47.0, 35.0, 20.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triscale" : 0.9
@@ -1750,8 +1731,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 191.0, 66.0, 70.0, 0.0 ],
-									"presentation_rect" : [ 191.0, 66.0, 70.0, 0.0 ],
+									"patching_rect" : [ 191.0, 66.0, 70.0, 20.0 ],
 									"style" : "",
 									"text" : "setsize $1"
 								}
@@ -1766,8 +1746,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 191.0, 214.0, 76.0, 0.0 ],
-									"presentation_rect" : [ 191.0, 214.0, 76.0, 0.0 ],
+									"patching_rect" : [ 191.0, 214.0, 76.0, 20.0 ],
 									"style" : "",
 									"text" : "append Test"
 								}
@@ -1782,8 +1761,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 191.0, 197.0, 88.0, 0.0 ],
-									"presentation_rect" : [ 191.0, 197.0, 88.0, 0.0 ],
+									"patching_rect" : [ 191.0, 197.0, 88.0, 20.0 ],
 									"style" : "",
 									"text" : "append I am a"
 								}
@@ -1798,8 +1776,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 191.0, 180.0, 82.0, 0.0 ],
-									"presentation_rect" : [ 191.0, 180.0, 82.0, 0.0 ],
+									"patching_rect" : [ 191.0, 180.0, 82.0, 20.0 ],
 									"style" : "",
 									"text" : "append World"
 								}
@@ -1814,8 +1791,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 191.0, 163.0, 82.0, 0.0 ],
-									"presentation_rect" : [ 191.0, 163.0, 82.0, 0.0 ],
+									"patching_rect" : [ 191.0, 163.0, 82.0, 20.0 ],
 									"style" : "",
 									"text" : "append Hello"
 								}
@@ -1830,8 +1806,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 191.0, 142.0, 40.0, 0.0 ],
-									"presentation_rect" : [ 191.0, 142.0, 40.0, 0.0 ],
+									"patching_rect" : [ 191.0, 142.0, 40.0, 20.0 ],
 									"style" : "",
 									"text" : "clear"
 								}
@@ -1840,7 +1815,7 @@
 , 							{
 								"box" : 								{
 									"embedstate" : [ [ "setdirection", "right" ], [ "setalignment", "left" ], [ "setfont", "Optima", 30 ], [ "nativeFRGB", 1, 1, 1 ], [ "nativeBRGB", 0, 0.603922, 0.501961 ] ],
-									"filename" : "net.loadbang.gui.TextBrick.js",
+									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-11",
 									"maxclass" : "jsui",
 									"numinlets" : 1,
@@ -1857,12 +1832,11 @@
 									"fontname" : "Monaco",
 									"fontsize" : 9.0,
 									"id" : "obj-12",
-									"linecount" : 7,
+									"linecount" : 6,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 266.0, 35.0, 100.0, 0.0 ],
-									"presentation_rect" : [ 266.0, 35.0, 100.0, 0.0 ],
+									"patching_rect" : [ 266.0, 35.0, 111.0, 74.0 ],
 									"style" : "",
 									"text" : "Set the number of lines (data beyond these lines is lost, although the append point moves on)"
 								}
@@ -1877,8 +1851,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 276.0, 127.0, 161.0, 0.0 ],
-									"presentation_rect" : [ 276.0, 127.0, 161.0, 0.0 ],
+									"patching_rect" : [ 276.0, 127.0, 161.0, 40.0 ],
 									"style" : "",
 									"text" : "Clear all lines (preserving the size), set the append point to the start"
 								}
@@ -1893,8 +1866,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 288.0, 253.0, 100.0, 0.0 ],
-									"presentation_rect" : [ 288.0, 253.0, 100.0, 0.0 ],
+									"patching_rect" : [ 288.0, 253.0, 106.0, 40.0 ],
 									"style" : "",
 									"text" : "Explicitly set an item (if it's in range)"
 								}
@@ -1909,8 +1881,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 54.0, 374.0, 221.0, 0.0 ],
-									"presentation_rect" : [ 54.0, 374.0, 221.0, 0.0 ],
+									"patching_rect" : [ 54.0, 374.0, 221.0, 29.0 ],
 									"style" : "",
 									"text" : "Size and content are not saved in the patcher - save them using pattr"
 								}
@@ -2025,10 +1996,10 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
-							"architecture" : "x86",
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -2070,8 +2041,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 287.0, 37.0, 100.0, 0.0 ],
-									"presentation_rect" : [ 287.0, 37.0, 100.0, 0.0 ],
+									"patching_rect" : [ 287.0, 37.0, 100.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -2085,8 +2055,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 332.0, 57.0, 130.0, 0.0 ],
-									"presentation_rect" : [ 332.0, 57.0, 130.0, 0.0 ],
+									"patching_rect" : [ 332.0, 57.0, 130.0, 20.0 ],
 									"style" : "",
 									"text" : "prepend setalignment"
 								}
@@ -2103,8 +2072,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 339.0, 104.0, 100.0, 0.0 ],
-									"presentation_rect" : [ 339.0, 104.0, 100.0, 0.0 ],
+									"patching_rect" : [ 339.0, 104.0, 100.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -2118,8 +2086,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 384.0, 125.0, 130.0, 0.0 ],
-									"presentation_rect" : [ 384.0, 125.0, 130.0, 0.0 ],
+									"patching_rect" : [ 384.0, 125.0, 130.0, 20.0 ],
 									"style" : "",
 									"text" : "prepend setdirection"
 								}
@@ -2156,13 +2123,12 @@
 									"fontname" : "Monaco",
 									"fontsize" : 9.0,
 									"id" : "obj-7",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.0, 66.0, 95.0, 0.0 ],
-									"presentation_rect" : [ 20.0, 66.0, 95.0, 0.0 ],
+									"patching_rect" : [ 20.0, 66.0, 100.0, 53.0 ],
 									"style" : "",
 									"text" : "setsize 4, clear, append This, append is, append a, append Test"
 								}
@@ -2177,8 +2143,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 117.0, 27.0, 58.0, 0.0 ],
-									"presentation_rect" : [ 117.0, 27.0, 58.0, 0.0 ],
+									"patching_rect" : [ 117.0, 27.0, 58.0, 20.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -2194,8 +2159,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 117.0, 66.0, 101.0, 0.0 ],
-									"presentation_rect" : [ 117.0, 66.0, 101.0, 0.0 ],
+									"patching_rect" : [ 117.0, 66.0, 106.0, 42.0 ],
 									"style" : "",
 									"text" : "setsize 2, clear, append Hello, append World"
 								}
@@ -2203,8 +2167,8 @@
 							}
 , 							{
 								"box" : 								{
-									"embedstate" : [ [ "setdirection", "up" ], [ "setalignment", "centre" ], [ "setfont", "Verdana", 15 ], [ "nativeFRGB", 0.462745, 0.890196, 1 ], [ "nativeBRGB", 0.133333, 0.372549, 1 ] ],
-									"filename" : "net.loadbang.gui.TextBrick.js",
+									"embedstate" : [ [ "setdirection", "up" ], [ "setalignment", "right" ], [ "setfont", "Verdana", 15 ], [ "nativeFRGB", 0.462745, 0.890196, 1 ], [ "nativeBRGB", 0.133333, 0.372549, 1 ] ],
+									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-10",
 									"maxclass" : "jsui",
 									"numinlets" : 1,
@@ -2225,8 +2189,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 374.0, 249.0, 172.0, 0.0 ],
-									"presentation_rect" : [ 374.0, 249.0, 172.0, 0.0 ],
+									"patching_rect" : [ 374.0, 249.0, 172.0, 29.0 ],
 									"style" : "",
 									"text" : "Direction and alignment are *saved in the patcher*"
 								}
@@ -2241,8 +2204,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 485.0, 35.0, 100.0, 0.0 ],
-									"presentation_rect" : [ 485.0, 35.0, 100.0, 0.0 ],
+									"patching_rect" : [ 485.0, 35.0, 100.0, 63.0 ],
 									"style" : "",
 									"text" : "Direction and alignment are independent: try all the combinations..."
 								}
@@ -2341,14 +2303,14 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
-							"architecture" : "x86",
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 786.0, 163.0, 588.0, 243.0 ],
+						"rect" : [ 127.0, 379.0, 588.0, 243.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2377,6 +2339,19 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 374.0, 46.0, 135.0, 22.0 ],
+									"style" : "",
+									"text" : "read cassiel.textbrick-P"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bgcolor" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
 									"fontface" : 1,
 									"fontname" : "Monaco",
@@ -2389,8 +2364,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 243.0, 51.0, 35.0, 0.0 ],
-									"presentation_rect" : [ 243.0, 51.0, 35.0, 0.0 ],
+									"patching_rect" : [ 243.0, 51.0, 35.0, 20.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triscale" : 0.9
@@ -2401,7 +2375,7 @@
 								"box" : 								{
 									"border" : 0,
 									"embedstate" : [ [ "setdirection", "right" ], [ "setalignment", "centre" ], [ "setfont", "Impact", 12 ], [ "nativeFRGB", 1, 1, 1 ], [ "nativeBRGB", 0.556863, 0.243137, 0.243137 ] ],
-									"filename" : "net.loadbang.gui.TextBrick.js",
+									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-2",
 									"jsarguments" : [ "Or:", "do", "a", "<<Get", "Info>>", "to", "set", "a", "single", "line", "of", "t-e-x-t", "as", "an", "argument" ],
 									"maxclass" : "jsui",
@@ -2418,7 +2392,7 @@
 								"box" : 								{
 									"border" : 0,
 									"embedstate" : [ [ "setdirection", "right" ], [ "setalignment", "left" ], [ "setfont", "Impact", 12 ], [ "nativeFRGB", 0, 0.05098, 0.603922 ], [ "nativeBRGB", 0.733333, 0.733333, 0.733333 ] ],
-									"filename" : "net.loadbang.gui.TextBrick.js",
+									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-3",
 									"maxclass" : "jsui",
 									"numinlets" : 1,
@@ -2440,8 +2414,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 265.0, 69.0, 70.0, 0.0 ],
-									"presentation_rect" : [ 265.0, 69.0, 70.0, 0.0 ],
+									"patching_rect" : [ 265.0, 69.0, 70.0, 20.0 ],
 									"style" : "",
 									"text" : "loadmess 1"
 								}
@@ -2456,21 +2429,20 @@
 									"numinlets" : 1,
 									"numoutlets" : 4,
 									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 265.0, 119.0, 64.0, 0.0 ],
-									"presentation_rect" : [ 265.0, 119.0, 64.0, 0.0 ],
+									"patching_rect" : [ 265.0, 119.0, 64.0, 20.0 ],
 									"restore" : 									{
 										"TRACYS" : [ "TextBrick.PATTR.1", 5, 1, "Scott", 0, 0, 0, 0 ]
 									}
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u521000856"
+									"varname" : "u779001053"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"autorestore" : "gui.TextBrickHelp-P.xml",
+									"autorestore" : "cassiel.textbrick-P.xml",
 									"fontname" : "Monaco",
 									"fontsize" : 9.0,
 									"id" : "obj-6",
@@ -2478,12 +2450,11 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 265.0, 99.0, 160.0, 0.0 ],
-									"presentation_rect" : [ 265.0, 99.0, 160.0, 0.0 ],
+									"patching_rect" : [ 265.0, 99.0, 160.0, 20.0 ],
 									"saved_object_attributes" : 									{
-										"client_rect" : [ 0, 0, 640, 240 ],
+										"client_rect" : [ 4, 44, 358, 172 ],
 										"parameter_enable" : 0,
-										"storage_rect" : [ 10, 59, 650, 299 ]
+										"storage_rect" : [ 583, 69, 1034, 197 ]
 									}
 ,
 									"style" : "",
@@ -2501,8 +2472,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 55.0, 141.0, 100.0, 0.0 ],
-									"presentation_rect" : [ 55.0, 141.0, 100.0, 0.0 ],
+									"patching_rect" : [ 55.0, 141.0, 111.0, 51.0 ],
 									"style" : "",
 									"text" : "Note that the number of lines is saved, even if not all are used"
 								}
@@ -2521,6 +2491,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"source" : [ "obj-9", 0 ]
 								}
 
 							}
@@ -2554,10 +2531,10 @@
 					"patcher" : 					{
 						"fileversion" : 1,
 						"appversion" : 						{
-							"major" : 8,
-							"minor" : 0,
-							"revision" : 0,
-							"architecture" : "x86",
+							"major" : 7,
+							"minor" : 3,
+							"revision" : 5,
+							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
@@ -2603,7 +2580,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 466.0, 37.0, 35.0, 0.0 ],
-									"presentation_rect" : [ 466.0, 37.0, 35.0, 0.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triscale" : 0.9
@@ -2620,7 +2596,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 466.0, 55.0, 88.0, 0.0 ],
-									"presentation_rect" : [ 466.0, 55.0, 88.0, 0.0 ],
 									"style" : "",
 									"text" : "saturation $1"
 								}
@@ -2641,7 +2616,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 336.0, 37.0, 35.0, 0.0 ],
-									"presentation_rect" : [ 336.0, 37.0, 35.0, 0.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triscale" : 0.9
@@ -2658,7 +2632,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 336.0, 55.0, 88.0, 0.0 ],
-									"presentation_rect" : [ 336.0, 55.0, 88.0, 0.0 ],
 									"style" : "",
 									"text" : "saturation $1"
 								}
@@ -2674,7 +2647,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 159.0, 146.0, 118.0, 0.0 ],
-									"presentation_rect" : [ 159.0, 146.0, 118.0, 0.0 ],
 									"style" : "",
 									"text" : "setfont Zapfino $1"
 								}
@@ -2695,7 +2667,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 159.0, 127.0, 35.0, 0.0 ],
-									"presentation_rect" : [ 159.0, 127.0, 35.0, 0.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triscale" : 0.9
@@ -2712,7 +2683,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 466.0, 115.0, 82.0, 0.0 ],
-									"presentation_rect" : [ 466.0, 115.0, 82.0, 0.0 ],
 									"style" : "",
 									"text" : "prepend brgb"
 								}
@@ -2742,7 +2712,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 336.0, 115.0, 82.0, 0.0 ],
-									"presentation_rect" : [ 336.0, 115.0, 82.0, 0.0 ],
 									"style" : "",
 									"text" : "prepend frgb"
 								}
@@ -2772,7 +2741,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 378.0, 418.0, 172.0, 0.0 ],
-									"presentation_rect" : [ 378.0, 418.0, 172.0, 0.0 ],
 									"style" : "",
 									"text" : "Colours and font settings are *saved in the patcher*"
 								}
@@ -2788,7 +2756,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 217.0, 111.0, 112.0, 0.0 ],
-									"presentation_rect" : [ 217.0, 111.0, 112.0, 0.0 ],
 									"style" : "",
 									"text" : "setfont Optima $1"
 								}
@@ -2809,7 +2776,6 @@
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 217.0, 92.0, 35.0, 0.0 ],
-									"presentation_rect" : [ 217.0, 92.0, 35.0, 0.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triscale" : 0.9
@@ -2826,7 +2792,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 84.0, 85.0, 100.0, 0.0 ],
-									"presentation_rect" : [ 84.0, 85.0, 100.0, 0.0 ],
 									"style" : "",
 									"text" : "prepend setfont"
 								}
@@ -2844,7 +2809,6 @@
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 39.0, 65.0, 100.0, 0.0 ],
-									"presentation_rect" : [ 39.0, 65.0, 100.0, 0.0 ],
 									"style" : ""
 								}
 
@@ -2872,7 +2836,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 20.0, 214.0, 58.0, 0.0 ],
-									"presentation_rect" : [ 20.0, 214.0, 58.0, 0.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -2889,7 +2852,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 20.0, 253.0, 101.0, 0.0 ],
-									"presentation_rect" : [ 20.0, 253.0, 101.0, 0.0 ],
 									"style" : "",
 									"text" : "setsize 2, clear, append Hello, append World"
 								}
@@ -2898,7 +2860,7 @@
 , 							{
 								"box" : 								{
 									"embedstate" : [ [ "setdirection", "right" ], [ "setalignment", "centre" ], [ "setfont", "Zapfino", 50 ], [ "nativeFRGB", 0, 0.098039, 0.533333 ], [ "nativeBRGB", 0.74902, 0.854902, 0.839216 ] ],
-									"filename" : "net.loadbang.gui.TextBrick.js",
+									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-19",
 									"maxclass" : "jsui",
 									"numinlets" : 1,
@@ -2920,7 +2882,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 195.0, 30.0, 132.0, 0.0 ],
-									"presentation_rect" : [ 195.0, 30.0, 132.0, 0.0 ],
 									"style" : "",
 									"text" : "How smooth is your TrueType? (Beware: scrolling through lots of font sizes will eat RAM...)"
 								}
@@ -2936,7 +2897,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 178.0, 418.0, 198.0, 0.0 ],
-									"presentation_rect" : [ 178.0, 418.0, 198.0, 0.0 ],
 									"style" : "",
 									"text" : "Sorry about the off-screen-ness of Zapfino: perhaps I need an offset command..."
 								}
@@ -3084,7 +3044,7 @@
 				"box" : 				{
 					"border" : 0,
 					"embedstate" : [ [ "setdirection", "right" ], [ "setalignment", "centre" ], [ "setfont", "Optima", 30 ], [ "nativeFRGB", 1, 1, 1 ], [ "nativeBRGB", 0.039216, 0.470588, 0 ] ],
-					"filename" : "net.loadbang.gui.TextBrick.js",
+					"filename" : "cassiel.textbrick.js",
 					"id" : "obj-15",
 					"maxclass" : "jsui",
 					"numinlets" : 1,
@@ -3101,7 +3061,7 @@
 				"box" : 				{
 					"border" : 0,
 					"embedstate" : [ [ "setdirection", "down" ], [ "setalignment", "right" ], [ "setfont", "Optima", 20 ], [ "nativeFRGB", 0, 0, 0 ], [ "nativeBRGB", 0.039216, 0.470588, 0 ] ],
-					"filename" : "net.loadbang.gui.TextBrick.js",
+					"filename" : "cassiel.textbrick.js",
 					"id" : "obj-16",
 					"maxclass" : "jsui",
 					"numinlets" : 1,
@@ -3118,7 +3078,7 @@
 				"box" : 				{
 					"border" : 0,
 					"embedstate" : [ [ "setdirection", "down" ], [ "setalignment", "left" ], [ "setfont", "Optima", 20 ], [ "nativeFRGB", 0.992157, 1, 0.533333 ], [ "nativeBRGB", 0.039216, 0.470588, 0 ] ],
-					"filename" : "net.loadbang.gui.TextBrick.js",
+					"filename" : "cassiel.textbrick.js",
 					"id" : "obj-17",
 					"maxclass" : "jsui",
 					"numinlets" : 1,
@@ -3141,6 +3101,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 510.0, 82.0, 102.0, 51.0 ],
+					"presentation_linecount" : 4,
 					"presentation_rect" : [ 510.0, 82.0, 102.0, 51.0 ],
 					"style" : "",
 					"text" : "If you're stuck with Windows and don't have the Optima font:"
@@ -3236,36 +3197,36 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "net.loadbang.gui.TextBrick.js",
-				"bootpath" : "~/Documents/Max 8/Packages/cassiel.textbrick/jsui",
+				"name" : "cassiel.textbrick.js",
+				"bootpath" : "~/GITHUB/cassiel/textbrick/jsui",
 				"patcherrelativepath" : "../jsui",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "gui.TextBrickHelp-P.xml",
-				"bootpath" : "~/Documents/Max 8/Packages/cassiel.textbrick/misc",
+				"name" : "cassiel.textbrick-P.xml",
+				"bootpath" : "~/GITHUB/cassiel/textbrick/misc",
 				"patcherrelativepath" : "../misc",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "gui.TextBrick-LabelClicker.mxt",
-				"bootpath" : "~/Documents/Max 8/Packages/cassiel.textbrick/patchers",
+				"name" : "cassiel.textbrick.label-clicker.maxpat",
+				"bootpath" : "~/GITHUB/cassiel/textbrick/patchers",
 				"patcherrelativepath" : "../patchers",
-				"type" : "TEXT",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "gui.TextBrickHelp-LM.coll",
-				"bootpath" : "~/Documents/Max 8/Packages/cassiel.textbrick/misc",
+				"name" : "cassiel.textbrick-LM.coll",
+				"bootpath" : "~/GITHUB/cassiel/textbrick/misc",
 				"patcherrelativepath" : "../misc",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "gui.TextBrickHelp-MS.xml",
-				"bootpath" : "~/Documents/Max 8/Packages/cassiel.textbrick/misc",
+				"name" : "cassiel.textbrick-MS.xml",
+				"bootpath" : "~/GITHUB/cassiel/textbrick/misc",
 				"patcherrelativepath" : "../misc",
 				"type" : "TEXT",
 				"implicit" : 1
