@@ -9,16 +9,18 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 175.0, 133.0, 716.0, 510.0 ],
+		"rect" : [ 79.0, 141.0, 817.0, 482.0 ],
+		"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
+		"editing_bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
-		"default_fontname" : "Arial",
-		"gridonopen" : 1,
-		"gridsize" : [ 15.0, 15.0 ],
-		"gridsnaponopen" : 1,
-		"objectsnaponopen" : 1,
+		"default_fontname" : "Courier",
+		"gridonopen" : 2,
+		"gridsize" : [ 15.0, 5.0 ],
+		"gridsnaponopen" : 2,
+		"objectsnaponopen" : 0,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
 		"lefttoolbarpinned" : 0,
@@ -34,12 +36,34 @@
 		"description" : "",
 		"digest" : "",
 		"tags" : "",
-		"style" : "",
+		"style" : "cassiel",
 		"subpatcher_template" : "",
+		"showontab" : 1,
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"bubble" : 1,
+					"bubbleside" : 3,
+					"fontface" : 2,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 183.0, 64.0, 433.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 195.0, 150.0, 198.0, 34.0 ],
+					"style" : "",
+					"text" : "jsui instances: file is cassiel.textbrick.js",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -54,7 +78,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 110.0, 294.0, 673.0, 512.0 ],
+						"rect" : [ 0.0, 26.0, 817.0, 456.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -81,6 +105,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-22",
@@ -125,13 +150,12 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u735001055"
+									"varname" : "u422003459"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"autorestore" : "cassiel.textbrick-MS.xml",
 									"fontname" : "Monaco",
 									"fontsize" : 9.0,
 									"id" : "obj-3",
@@ -606,7 +630,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 513.0, 227.0, 130.0, 20.0 ],
+					"patching_rect" : [ 513.0, 227.0, 170.0, 20.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 513.0, 227.0, 130.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
@@ -624,15 +649,16 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"hidden" : 1,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 638.0, 101.0, 136.0, 20.0 ],
+					"patching_rect" : [ 638.0, 101.0, 179.0, 20.0 ],
+					"presentation_linecount" : 2,
 					"presentation_rect" : [ 638.0, 101.0, 136.0, 20.0 ],
 					"style" : "",
 					"text" : "sprintf setfont %s 30"
@@ -641,15 +667,16 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"hidden" : 1,
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 646.0, 78.0, 136.0, 20.0 ],
+					"patching_rect" : [ 646.0, 78.0, 179.0, 20.0 ],
+					"presentation_linecount" : 2,
 					"presentation_rect" : [ 646.0, 78.0, 136.0, 20.0 ],
 					"style" : "",
 					"text" : "sprintf setfont %s 20"
@@ -658,8 +685,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
 					"id" : "obj-4",
 					"items" : [ "Arial", ",", "Verdana", ",", "Tahoma", ",", "Optima" ],
 					"maxclass" : "umenu",
@@ -668,15 +693,16 @@
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 513.0, 130.0, 100.0, 20.0 ],
-					"presentation_rect" : [ 513.0, 130.0, 100.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 180.0, 250.0, 100.0, 20.0 ],
 					"style" : ""
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"id" : "obj-5",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -1049,7 +1075,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 27.0, 42.0, 82.0, 20.0 ],
+					"patching_rect" : [ 27.0, 42.0, 107.0, 20.0 ],
+					"presentation_linecount" : 2,
 					"presentation_rect" : [ 27.0, 42.0, 82.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
@@ -1066,72 +1093,44 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"fontface" : 2,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"id" : "obj-6",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 168.0, 37.0, 288.0, 18.0 ],
-					"presentation_rect" : [ 168.0, 37.0, 288.0, 18.0 ],
+					"patching_rect" : [ 168.0, 37.0, 382.0, 30.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 15.0, 10.0, 382.0, 30.0 ],
 					"style" : "",
-					"text" : "TextBrick: programmable text blocks for Max/MSP"
+					"text" : "cassiel.textbrick.js: programmable text blocks for Max/MSP 4.0 and above."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"fontface" : 2,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"id" : "obj-7",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 168.0, 49.0, 327.0, 18.0 ],
-					"presentation_rect" : [ 168.0, 49.0, 327.0, 18.0 ],
+					"patching_rect" : [ 168.0, 49.0, 433.0, 18.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 15.0, 50.0, 433.0, 18.0 ],
 					"style" : "",
-					"text" : "Nick Rothwell, nick@cassiel.com / nick@loadbang.net"
+					"text" : "Nick Rothwell, nick@cassiel.com"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
-					"id" : "obj-8",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 168.0, 61.0, 253.0, 18.0 ],
-					"presentation_rect" : [ 168.0, 61.0, 253.0, 18.0 ],
-					"style" : "",
-					"text" : "Download from: http://www.loadbang.net"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"border" : 2,
-					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-9",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 165.0, 34.0, 332.0, 43.0 ],
-					"presentation_rect" : [ 165.0, 34.0, 332.0, 43.0 ],
-					"proportion" : 0.39,
-					"rounded" : 0,
-					"style" : ""
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -1146,7 +1145,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 745.0, 367.0, 366.0, 393.0 ],
+						"rect" : [ 0.0, 26.0, 817.0, 456.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1173,6 +1172,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"border" : 0,
@@ -1198,7 +1198,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 23.0, 59.0, 280.0, 0.0 ],
+									"patching_rect" : [ 23.0, 59.0, 280.0, 20.0 ],
 									"style" : "",
 									"text" : "setsize 1, clear, append Big Friendly Buttons"
 								}
@@ -1213,7 +1213,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 23.0, 37.0, 58.0, 0.0 ],
+									"patching_rect" : [ 23.0, 37.0, 58.0, 20.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -1228,7 +1228,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 104.0, 343.0, 34.0, 0.0 ],
+									"patching_rect" : [ 104.0, 343.0, 34.0, 20.0 ],
 									"style" : "",
 									"text" : "$1 1"
 								}
@@ -1243,7 +1243,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 5,
 									"outlettype" : [ "", "", "", "", "" ],
-									"patching_rect" : [ 240.0, 105.0, 66.0, 0.0 ],
+									"patching_rect" : [ 240.0, 105.0, 66.0, 20.0 ],
 									"style" : "",
 									"text" : "spray 5"
 								}
@@ -1262,7 +1262,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 104.0, 318.0, 27.0, 0.0 ],
+									"patching_rect" : [ 104.0, 318.0, 27.0, 20.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triangle" : 0,
@@ -1279,7 +1279,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 124.0, 105.0, 14.0, 0.0 ],
+									"patching_rect" : [ 124.0, 105.0, 14.0, 20.0 ],
 									"style" : "",
 									"text" : "0"
 								}
@@ -1294,7 +1294,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "int", "bang" ],
-									"patching_rect" : [ 104.0, 294.0, 40.0, 0.0 ],
+									"patching_rect" : [ 104.0, 294.0, 40.0, 20.0 ],
 									"style" : "",
 									"text" : "t i b"
 								}
@@ -1419,7 +1419,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 185.0, 266.0, 100.0, 0.0 ],
+									"patching_rect" : [ 185.0, 266.0, 100.0, 63.0 ],
 									"style" : "",
 									"text" : "This will probably look a bit crap if you don't have the Impact font"
 								}
@@ -1596,7 +1596,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 513.0, 245.0, 130.0, 20.0 ],
+					"patching_rect" : [ 513.0, 245.0, 170.0, 20.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 513.0, 245.0, 130.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
@@ -1613,8 +1614,8 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -1629,7 +1630,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 331.0, 266.0, 459.0, 429.0 ],
+						"rect" : [ 0.0, 26.0, 817.0, 456.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1656,6 +1657,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Monaco",
@@ -1970,7 +1972,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 513.0, 191.0, 100.0, 20.0 ],
+					"patching_rect" : [ 513.0, 191.0, 130.0, 20.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 513.0, 191.0, 100.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
@@ -1987,8 +1990,8 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -2003,7 +2006,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 415.0, 398.0, 616.0, 317.0 ],
+						"rect" : [ 0.0, 26.0, 817.0, 456.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2030,6 +2033,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontname" : "Monaco",
@@ -2128,7 +2132,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.0, 66.0, 100.0, 53.0 ],
+									"patching_rect" : [ 20.0, 66.0, 106.0, 53.0 ],
 									"style" : "",
 									"text" : "setsize 4, clear, append This, append is, append a, append Test"
 								}
@@ -2277,7 +2281,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 513.0, 155.0, 148.0, 20.0 ],
+					"patching_rect" : [ 513.0, 155.0, 194.0, 20.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 513.0, 155.0, 148.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
@@ -2294,8 +2299,8 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"id" : "obj-13",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -2310,7 +2315,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 127.0, 379.0, 588.0, 243.0 ],
+						"rect" : [ 0.0, 26.0, 817.0, 456.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2337,6 +2342,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-9",
@@ -2436,13 +2442,12 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u779001053"
+									"varname" : "u060003457"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"autorestore" : "cassiel.textbrick-P.xml",
 									"fontname" : "Monaco",
 									"fontsize" : 9.0,
 									"id" : "obj-6",
@@ -2504,7 +2509,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 513.0, 209.0, 142.0, 20.0 ],
+					"patching_rect" : [ 513.0, 209.0, 187.0, 20.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 513.0, 209.0, 142.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
@@ -2522,8 +2528,8 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -2538,7 +2544,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 153.0, 166.0, 715.0, 534.0 ],
+						"rect" : [ 0.0, 26.0, 817.0, 456.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2565,6 +2571,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgcolor" : [ 0.866667, 0.866667, 0.866667, 1.0 ],
@@ -2579,7 +2586,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 466.0, 37.0, 35.0, 0.0 ],
+									"patching_rect" : [ 466.0, 37.0, 35.0, 20.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triscale" : 0.9
@@ -2595,7 +2602,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 466.0, 55.0, 88.0, 0.0 ],
+									"patching_rect" : [ 466.0, 55.0, 88.0, 20.0 ],
 									"style" : "",
 									"text" : "saturation $1"
 								}
@@ -2615,7 +2622,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 336.0, 37.0, 35.0, 0.0 ],
+									"patching_rect" : [ 336.0, 37.0, 35.0, 20.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triscale" : 0.9
@@ -2631,7 +2638,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 336.0, 55.0, 88.0, 0.0 ],
+									"patching_rect" : [ 336.0, 55.0, 88.0, 20.0 ],
 									"style" : "",
 									"text" : "saturation $1"
 								}
@@ -2646,7 +2653,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 159.0, 146.0, 118.0, 0.0 ],
+									"patching_rect" : [ 159.0, 146.0, 118.0, 20.0 ],
 									"style" : "",
 									"text" : "setfont Zapfino $1"
 								}
@@ -2666,7 +2673,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 159.0, 127.0, 35.0, 0.0 ],
+									"patching_rect" : [ 159.0, 127.0, 35.0, 20.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triscale" : 0.9
@@ -2682,7 +2689,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 466.0, 115.0, 82.0, 0.0 ],
+									"patching_rect" : [ 466.0, 115.0, 82.0, 20.0 ],
 									"style" : "",
 									"text" : "prepend brgb"
 								}
@@ -2711,7 +2718,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 336.0, 115.0, 82.0, 0.0 ],
+									"patching_rect" : [ 336.0, 115.0, 82.0, 20.0 ],
 									"style" : "",
 									"text" : "prepend frgb"
 								}
@@ -2740,7 +2747,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 378.0, 418.0, 172.0, 0.0 ],
+									"patching_rect" : [ 378.0, 418.0, 172.0, 29.0 ],
 									"style" : "",
 									"text" : "Colours and font settings are *saved in the patcher*"
 								}
@@ -2755,7 +2762,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 217.0, 111.0, 112.0, 0.0 ],
+									"patching_rect" : [ 217.0, 111.0, 112.0, 20.0 ],
 									"style" : "",
 									"text" : "setfont Optima $1"
 								}
@@ -2775,7 +2782,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 217.0, 92.0, 35.0, 0.0 ],
+									"patching_rect" : [ 217.0, 92.0, 35.0, 20.0 ],
 									"style" : "",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"triscale" : 0.9
@@ -2791,7 +2798,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 84.0, 85.0, 100.0, 0.0 ],
+									"patching_rect" : [ 84.0, 85.0, 100.0, 20.0 ],
 									"style" : "",
 									"text" : "prepend setfont"
 								}
@@ -2808,7 +2815,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 39.0, 65.0, 100.0, 0.0 ],
+									"patching_rect" : [ 39.0, 65.0, 100.0, 20.0 ],
 									"style" : ""
 								}
 
@@ -2835,7 +2842,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 20.0, 214.0, 58.0, 0.0 ],
+									"patching_rect" : [ 20.0, 214.0, 58.0, 20.0 ],
 									"style" : "",
 									"text" : "loadbang"
 								}
@@ -2851,7 +2858,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 20.0, 253.0, 101.0, 0.0 ],
+									"patching_rect" : [ 20.0, 253.0, 106.0, 42.0 ],
 									"style" : "",
 									"text" : "setsize 2, clear, append Hello, append World"
 								}
@@ -2881,7 +2888,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 195.0, 30.0, 132.0, 0.0 ],
+									"patching_rect" : [ 195.0, 30.0, 133.0, 63.0 ],
 									"style" : "",
 									"text" : "How smooth is your TrueType? (Beware: scrolling through lots of font sizes will eat RAM...)"
 								}
@@ -2896,7 +2903,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 178.0, 418.0, 198.0, 0.0 ],
+									"patching_rect" : [ 178.0, 418.0, 198.0, 40.0 ],
 									"style" : "",
 									"text" : "Sorry about the off-screen-ness of Zapfino: perhaps I need an offset command..."
 								}
@@ -3025,7 +3032,8 @@
  ]
 					}
 ,
-					"patching_rect" : [ 513.0, 173.0, 112.0, 20.0 ],
+					"patching_rect" : [ 513.0, 173.0, 147.0, 20.0 ],
+					"presentation_linecount" : 3,
 					"presentation_rect" : [ 513.0, 173.0, 112.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
@@ -3052,7 +3060,8 @@
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 121.0, 80.0, 376.0, 48.0 ],
-					"presentation_rect" : [ 121.0, 80.0, 376.0, 48.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 405.0, 13.0, 376.0, 48.0 ],
 					"varname" : "TITLES[2]"
 				}
 
@@ -3069,7 +3078,8 @@
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 121.0, 127.0, 376.0, 36.0 ],
-					"presentation_rect" : [ 121.0, 127.0, 376.0, 36.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 405.0, 60.0, 376.0, 36.0 ],
 					"varname" : "TITLES[1]"
 				}
 
@@ -3086,25 +3096,31 @@
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 121.0, 162.0, 376.0, 313.0 ],
-					"presentation_rect" : [ 121.0, 162.0, 376.0, 313.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 405.0, 95.0, 376.0, 313.0 ],
 					"varname" : "TITLES"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Monaco",
-					"fontsize" : 9.0,
+					"bubble" : 1,
+					"bubbleside" : 3,
+					"fontface" : 2,
+					"fontname" : "Courier",
+					"fontsize" : 12.0,
 					"id" : "obj-18",
 					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 510.0, 82.0, 102.0, 51.0 ],
+					"patching_rect" : [ 510.0, 82.0, 141.0, 58.0 ],
+					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 510.0, 82.0, 102.0, 51.0 ],
+					"presentation_rect" : [ 15.0, 225.0, 141.0, 58.0 ],
 					"style" : "",
-					"text" : "If you're stuck with Windows and don't have the Optima font:"
+					"text" : "If you're stuck with Windows and don't have the Optima font:",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -3204,13 +3220,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cassiel.textbrick-P.xml",
-				"bootpath" : "~/GITHUB/cassiel/textbrick/misc",
-				"patcherrelativepath" : "../misc",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "cassiel.textbrick.label-clicker.maxpat",
 				"bootpath" : "~/GITHUB/cassiel/textbrick/patchers",
 				"patcherrelativepath" : "../patchers",
@@ -3224,15 +3233,35 @@
 				"type" : "TEXT",
 				"implicit" : 1
 			}
-, 			{
-				"name" : "cassiel.textbrick-MS.xml",
-				"bootpath" : "~/GITHUB/cassiel/textbrick/misc",
-				"patcherrelativepath" : "../misc",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
  ],
-		"autosave" : 0
+		"autosave" : 0,
+		"styles" : [ 			{
+				"name" : "cassiel",
+				"default" : 				{
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"bgfillcolor" : 					{
+						"type" : "gradient",
+						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"color1" : [ 0.486435, 0.462784, 0.5, 1.0 ],
+						"color2" : [ 0.19771, 0.188048, 0.201856, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+,
+					"fontface" : [ 0 ],
+					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
+					"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+					"fontname" : [ "Courier" ]
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+ ]
 	}
 
 }
