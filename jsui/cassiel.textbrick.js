@@ -104,8 +104,8 @@ function announce() {
 	var g = new Global(MYGLOBAL);
 
 	if (g.announced === undefined) {
-		post("Text Brick $Id$\n");
-		post("Nick Rothwell, nick@loadbang.net / nick@cassiel.com\n");
+		post("| cassiel.textbrick\n");
+		post("| nick rothwell, nick@cassiel.com / http://cassiel.com\n");
 		g.announced = true;
 	}
 }

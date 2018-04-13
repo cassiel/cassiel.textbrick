@@ -4,3 +4,5 @@
 * textbrick
 
 Text Brick UI object for Max/MSP
+
+(Now merged into [[https://github.com/cassiel/ui-candy-2006]].)
