@@ -4,7 +4,7 @@
 	it. The panel can left-, centre- or right-justify the text, and the text can
 	run in any orientation. Font size and style, and all colours, can be
 	modified interactively.
-	
+
 	At the moment we have no plans for interaction (click/drag).
  */
 
@@ -20,7 +20,7 @@ function COLOUR(r, g, b) {
 
 /*	C O N S T A N T S  */
 
-var MYGLOBAL = "$RCSfile$";
+var MYGLOBAL = "cassiel.textbrick.GLOBAL";
 
 var PANEL_BG = new COLOUR(1, 1, 1);		//	Background colour
 var TEXT_COLOUR = new COLOUR(0, 0, 0);
@@ -65,7 +65,7 @@ var g_Alignment = ALIGN_LEFT;
 
 /*	Lines of text; tolerate `undefined' for blank lines. The length of this array
 	determines the positioning of the lines.
-	
+
 	Each line is, itself, an array of tokens. (We want to avoid blowing up Max's
 	symbol table when we do things like saving and restoring pattr presets, so
 	we only build composite lines when rendering.) */
@@ -87,9 +87,9 @@ function init() {
 	sketch.fsaa = 0;
 	regenSketch();
 	clear();
-	
+
 	announce();
-	
+
 	//	If we have any arguments, take them as the text of a single line.
 	if (jsarguments.length > 1) {
 		g_TheLines.length = 1;
@@ -102,7 +102,7 @@ function init() {
 announce.local = true;
 function announce() {
 	var g = new Global(MYGLOBAL);
-	
+
 	if (g.announced === undefined) {
 		post("Text Brick $Id$\n");
 		post("Nick Rothwell, nick@loadbang.net / nick@cassiel.com\n");
@@ -134,18 +134,18 @@ function regenSketch() {
 redraw.local = 1;
 function redraw() {
 	var pitch = 2.0 / g_TheLines.length;
-	
+
 	with (g_WorkingSketch) {
 		var edge = screentoworld(g_WorkingSketch.size[0], 0)[0];
 			//	Right OpenGL coordinate.
-			
+
 		//post("edge = " + edge + "\n");
 
 		glclearcolor(g_BRGB.r, g_BRGB.g, g_BRGB.b, 1);
 		glclear();
 
 		glcolor(g_FRGB.r, g_FRGB.g, g_FRGB.b, 1);
-		
+
 		//	Calculate margin in OpenGL coordinates:
 		var margin = screentoworld(g_WorkingSketch.size[0] / 2 + MARGIN_PX, 0)[0];
 		//post("margin = " + margin + "\n");
@@ -170,20 +170,20 @@ function redraw() {
 			}
 		}
 	}
-	
+
 	if (g_RotationMode == ROT_RIGHT) {
 		sketch.copypixels(g_WorkingSketch);
 	} else {
 		var img = new Image(g_WorkingSketch);
-		
+
 		img.swapxy();
-		
+
 		if (g_RotationMode == ROT_UP) {
 			img.flip(0, 1);
 		} else {
 			img.flip(1, 0);
 		}
-		
+
 		sketch.copypixels(img);
 	}
 
@@ -292,15 +292,15 @@ function setalignment(tag) {
 
 function getvalueof() {
 	var a = [PATTR_TAG];
-	
+
 	a.push(g_TheLines.length);
-	
+
 	for (var i = 0; i < g_TheLines.length; i++) {
 		if (g_TheLines[i] == undefined) {				//	Empty/missing line.
 			a.push(0);
 		} else {
 			var line = g_TheLines[i];
-			
+
 			a.push(line.length);
 			for (var j = 0; j < line.length; j++) {
 				a.push(line[j]);
@@ -313,7 +313,7 @@ function getvalueof() {
 
 function setvalueof() {
 	var a = arrayfromargs(arguments);
-	
+
 	if (a.length < 2) {
 		post("*** setvalueof: truncated?\n");
 	} else if (a[0] != PATTR_TAG) {
@@ -322,17 +322,17 @@ function setvalueof() {
 		var len = a[1];
 		g_TheLines.length = len;
 		g_NextLine = 0;
-		
+
 		var p = 2;									//	First line length at a[2].
-		
+
 		for (var i = 0; i < len; i++) {				//	Retrieve the lines.
 			var linelen = a[p++];
-			
+
 			if (linelen == 0) {						//	Empty/undefined line.
 				delete(g_TheLines[i]);
 			} else {
 				var line = new Array(linelen);
-				
+
 				for (var j = 0; j < linelen; j++) {
 					line[j] = a[p++];
 				}
@@ -344,7 +344,7 @@ function setvalueof() {
 					//	so, we point at a line beyond the last good line.
 			}
 		}
-		
+
 		redraw();
 	}
 }
@@ -357,7 +357,7 @@ function save() {
 	embedmessage("setfont", g_FontName, g_FontSize);
 	embedmessage("nativeFRGB", g_FRGB.r, g_FRGB.g, g_FRGB.b);
 	embedmessage("nativeBRGB", g_BRGB.r, g_BRGB.g, g_BRGB.b);
-	
+
 	//	Arguably we could save the number of lines, but that will be saved/restored
 	//	with the preset data anyway.
 }
