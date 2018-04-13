@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 74.0, 149.0, 845.0, 572.0 ],
+		"rect" : [ 431.0, 356.0, 845.0, 572.0 ],
 		"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 		"editing_bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 		"bglocked" : 0,
@@ -78,7 +78,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 845.0, 516.0 ],
+						"rect" : [ 0.0, 26.0, 845.0, 546.0 ],
 						"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 						"editing_bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 						"bglocked" : 0,
@@ -188,7 +188,7 @@
 ,
 									"style" : "cassiel",
 									"text" : "autopattr",
-									"varname" : "u872000524"
+									"varname" : "u097000995"
 								}
 
 							}
@@ -358,7 +358,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 345.0, 175.0, 90.0, 32.0 ],
+									"patching_rect" : [ 345.0, 175.0, 95.0, 32.0 ],
 									"style" : "cassiel",
 									"text" : "setsize 10, clear"
 								}
@@ -429,7 +429,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 2,
 									"id" : "obj-19",
 									"linecount" : 2,
 									"maxclass" : "comment",
@@ -443,13 +442,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 2,
 									"id" : "obj-20",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 180.0, 465.0, 285.0, 30.0 ],
+									"patching_rect" : [ 180.0, 465.0, 289.0, 30.0 ],
 									"style" : "cassiel",
 									"text" : "Items ordered by the sense of the text (so direction=down means R-to-L)"
 								}
@@ -457,7 +455,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 2,
 									"id" : "obj-21",
 									"linecount" : 2,
 									"maxclass" : "comment",
@@ -653,14 +650,9 @@
 						"styles" : [ 							{
 								"name" : "cassiel",
 								"default" : 								{
-									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
 									"fontname" : [ "Courier" ],
+									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -670,7 +662,12 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
+									"fontface" : [ 0 ],
+									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1195,7 +1192,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 74.0, 205.0, 845.0, 516.0 ],
+						"rect" : [ 0.0, 26.0, 845.0, 546.0 ],
 						"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 						"editing_bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 						"bglocked" : 0,
@@ -1227,7 +1224,6 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"fontface" : 2,
 									"id" : "obj-16",
 									"maxclass" : "comment",
 									"numinlets" : 1,
@@ -1315,7 +1311,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 105.0, 300.0, 31.0, 20.0 ],
+									"patching_rect" : [ 105.0, 300.0, 37.0, 20.0 ],
 									"style" : "cassiel",
 									"triangle" : 0,
 									"triscale" : 0.9
@@ -1470,15 +1466,14 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 2,
 									"id" : "obj-14",
-									"linecount" : 5,
+									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 315.0, 150.0, 131.0, 66.0 ],
+									"patching_rect" : [ 315.0, 150.0, 141.0, 54.0 ],
 									"style" : "cassiel",
-									"text" : "This will probably look a bit crap if you don't have the Impact font"
+									"text" : "This will probably look a bit shoddy if you don't have the Impact font"
 								}
 
 							}
@@ -1654,14 +1649,9 @@
 						"styles" : [ 							{
 								"name" : "cassiel",
 								"default" : 								{
-									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
 									"fontname" : [ "Courier" ],
+									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -1671,7 +1661,12 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
+									"fontface" : [ 0 ],
+									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1714,7 +1709,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 845.0, 516.0 ],
+						"rect" : [ 0.0, 26.0, 845.0, 546.0 ],
 						"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 						"editing_bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 						"bglocked" : 0,
@@ -1793,7 +1788,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 195.0, 35.0, 39.0, 20.0 ],
+									"patching_rect" : [ 195.0, 35.0, 45.0, 20.0 ],
 									"style" : "cassiel",
 									"triscale" : 0.9
 								}
@@ -1925,7 +1920,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 330.0, 255.0, 134.0, 42.0 ],
+									"patching_rect" : [ 330.0, 255.0, 145.0, 42.0 ],
 									"style" : "cassiel",
 									"text" : "Explicitly set an item (only if it's in range)"
 								}
@@ -2028,14 +2023,9 @@
 						"styles" : [ 							{
 								"name" : "cassiel",
 								"default" : 								{
-									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
 									"fontname" : [ "Courier" ],
+									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2045,7 +2035,12 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
+									"fontface" : [ 0 ],
+									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2088,7 +2083,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 845.0, 516.0 ],
+						"rect" : [ 0.0, 26.0, 845.0, 546.0 ],
 						"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 						"editing_bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 						"bglocked" : 0,
@@ -2120,12 +2115,37 @@
 						"showontab" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
-									"fontface" : 2,
+									"id" : "obj-14",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 315.0, 20.0, 84.0, 20.0 ],
+									"style" : "cassiel",
+									"text" : "loadmess 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 360.0, 115.0, 84.0, 20.0 ],
+									"style" : "cassiel",
+									"text" : "loadmess 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-22",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 450.0, 225.0, 204.0, 18.0 ],
+									"patching_rect" : [ 450.0, 235.0, 204.0, 18.0 ],
 									"style" : "cassiel",
 									"text" : "Set border to taste"
 								}
@@ -2139,7 +2159,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 405.0, 225.0, 24.0, 24.0 ],
+									"patching_rect" : [ 405.0, 235.0, 24.0, 24.0 ],
 									"style" : "cassiel"
 								}
 
@@ -2159,7 +2179,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 0,
 									"id" : "obj-1",
 									"items" : [ "left", ",", "right", ",", "centre" ],
 									"maxclass" : "umenu",
@@ -2174,13 +2193,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 0,
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 315.0, 85.0, 170.0, 20.0 ],
+									"patching_rect" : [ 315.0, 85.0, 210.0, 20.0 ],
 									"style" : "cassiel-1",
 									"text" : "prepend setalignment"
 								}
@@ -2188,7 +2206,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 0,
 									"id" : "obj-3",
 									"items" : [ "right", ",", "up", ",", "down" ],
 									"maxclass" : "umenu",
@@ -2196,20 +2213,19 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 315.0, 130.0, 100.0, 20.0 ],
+									"patching_rect" : [ 360.0, 150.0, 100.0, 20.0 ],
 									"style" : "cassiel-1"
 								}
 
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 0,
 									"id" : "obj-4",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 315.0, 165.0, 170.0, 20.0 ],
+									"patching_rect" : [ 360.0, 185.0, 223.0, 20.0 ],
 									"style" : "cassiel-1",
 									"text" : "prepend setdirection"
 								}
@@ -2237,7 +2253,7 @@
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 30.0, 50.0, 24.0, 24.0 ],
 									"presentation_rect" : [ 117.0, 47.0, 15.0, 15.0 ],
-									"style" : ""
+									"style" : "cassiel"
 								}
 
 							}
@@ -2285,7 +2301,7 @@
 , 							{
 								"box" : 								{
 									"border" : 0,
-									"embedstate" : [ [ "setdirection", "up" ], [ "setalignment", "right" ], [ "setfont", "Verdana", 15 ], [ "nativeFRGB", 0.462745, 0.890196, 1 ], [ "nativeBRGB", 0.133333, 0.372549, 1 ] ],
+									"embedstate" : [ [ "setdirection", "down" ], [ "setalignment", "left" ], [ "setfont", "Verdana", 15 ], [ "nativeFRGB", 0.462745, 0.890196, 1 ], [ "nativeBRGB", 0.133333, 0.372549, 1 ] ],
 									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-10",
 									"maxclass" : "jsui",
@@ -2337,6 +2353,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-2", 0 ],
 									"source" : [ "obj-1", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-14", 0 ]
 								}
 
 							}
@@ -2414,14 +2444,9 @@
 						"styles" : [ 							{
 								"name" : "cassiel",
 								"default" : 								{
-									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
 									"fontname" : [ "Courier" ],
+									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2431,7 +2456,12 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
+									"fontface" : [ 0 ],
+									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2440,14 +2470,9 @@
 , 							{
 								"name" : "cassiel-1",
 								"default" : 								{
-									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontface" : [ 2 ],
-									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
 									"fontname" : [ "Courier" ],
+									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2457,7 +2482,12 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
+									"fontface" : [ 2 ],
+									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2500,7 +2530,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 845.0, 516.0 ],
+						"rect" : [ 431.0, 382.0, 845.0, 546.0 ],
 						"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 						"editing_bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 						"bglocked" : 0,
@@ -2583,7 +2613,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontsize" : 16.0,
 									"id" : "obj-1",
 									"maxclass" : "number",
 									"maximum" : 5,
@@ -2592,7 +2621,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 165.0, 20.0, 43.0, 24.0 ],
+									"patching_rect" : [ 165.0, 20.0, 39.0, 20.0 ],
 									"style" : "cassiel",
 									"triscale" : 0.9
 								}
@@ -2601,7 +2630,7 @@
 , 							{
 								"box" : 								{
 									"border" : 0,
-									"embedstate" : [ [ "setdirection", "up" ], [ "setalignment", "centre" ], [ "setfont", "Courier", 12 ], [ "nativeFRGB", 0, 0, 0 ], [ "nativeBRGB", 1, 1, 1 ] ],
+									"embedstate" : [ [ "setdirection", "up" ], [ "setalignment", "centre" ], [ "setfont", "Impact", 14 ], [ "nativeFRGB", 0, 0, 0 ], [ "nativeBRGB", 1, 1, 1 ] ],
 									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-2",
 									"jsarguments" : [ "Or:", "do", "a", "<<Get", "Info>>", "to", "set", "a", "single", "line", "of", "text", "as", "an", "argument" ],
@@ -2618,7 +2647,7 @@
 , 							{
 								"box" : 								{
 									"border" : 0,
-									"embedstate" : [ [ "setdirection", "right" ], [ "setalignment", "left" ], [ "setfont", "Impact", 12 ], [ "nativeFRGB", 0, 0.05098, 0.603922 ], [ "nativeBRGB", 0.733333, 0.733333, 0.733333 ] ],
+									"embedstate" : [ [ "setdirection", "right" ], [ "setalignment", "left" ], [ "setfont", "Impact", 14 ], [ "nativeFRGB", 0, 0.05098, 0.603922 ], [ "nativeBRGB", 0.733333, 0.733333, 0.733333 ] ],
 									"filename" : "cassiel.textbrick.js",
 									"id" : "obj-3",
 									"maxclass" : "jsui",
@@ -2647,7 +2676,7 @@
 ,
 									"style" : "cassiel",
 									"text" : "autopattr",
-									"varname" : "u090000522"
+									"varname" : "u282000993"
 								}
 
 							}
@@ -2674,13 +2703,12 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 2,
 									"id" : "obj-7",
 									"linecount" : 4,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 130.0, 138.0, 54.0 ],
+									"patching_rect" : [ 15.0, 130.0, 145.0, 54.0 ],
 									"style" : "cassiel",
 									"text" : "Note that the number of lines is saved, even if not all are used"
 								}
@@ -2735,14 +2763,9 @@
 						"styles" : [ 							{
 								"name" : "cassiel",
 								"default" : 								{
-									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
 									"fontname" : [ "Courier" ],
+									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -2752,7 +2775,12 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
+									"fontface" : [ 0 ],
+									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2796,7 +2824,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 26.0, 845.0, 516.0 ],
+						"rect" : [ 0.0, 26.0, 845.0, 546.0 ],
 						"bgcolor" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
 						"editing_bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 						"bglocked" : 0,
@@ -2836,7 +2864,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 525.0, 20.0, 39.0, 20.0 ],
+									"patching_rect" : [ 525.0, 20.0, 45.0, 20.0 ],
 									"style" : "cassiel",
 									"triscale" : 0.9
 								}
@@ -2865,7 +2893,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 390.0, 20.0, 39.0, 20.0 ],
+									"patching_rect" : [ 390.0, 20.0, 45.0, 20.0 ],
 									"style" : "cassiel",
 									"triscale" : 0.9
 								}
@@ -2907,7 +2935,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 150.0, 140.0, 39.0, 20.0 ],
+									"patching_rect" : [ 150.0, 140.0, 45.0, 20.0 ],
 									"style" : "cassiel",
 									"triscale" : 0.9
 								}
@@ -2969,7 +2997,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 2,
 									"id" : "obj-11",
 									"linecount" : 2,
 									"maxclass" : "comment",
@@ -3004,7 +3031,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "bang" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 240.0, 80.0, 39.0, 20.0 ],
+									"patching_rect" : [ 240.0, 80.0, 45.0, 20.0 ],
 									"style" : "cassiel",
 									"triscale" : 0.9
 								}
@@ -3094,7 +3121,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 2,
 									"id" : "obj-20",
 									"linecount" : 5,
 									"maxclass" : "comment",
@@ -3108,7 +3134,6 @@
 							}
 , 							{
 								"box" : 								{
-									"fontface" : 2,
 									"id" : "obj-21",
 									"linecount" : 3,
 									"maxclass" : "comment",
@@ -3244,14 +3269,9 @@
 						"styles" : [ 							{
 								"name" : "cassiel",
 								"default" : 								{
-									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"fontface" : [ 0 ],
-									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
 									"fontname" : [ "Courier" ],
+									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"bgfillcolor" : 									{
 										"type" : "gradient",
 										"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -3261,7 +3281,12 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+									"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
+									"fontface" : [ 0 ],
+									"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3352,12 +3377,12 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 510.0, 82.0, 148.0, 58.0 ],
+					"patching_rect" : [ 510.0, 82.0, 155.0, 58.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 4,
-					"presentation_rect" : [ 15.0, 225.0, 148.0, 58.0 ],
+					"presentation_rect" : [ 15.0, 225.0, 158.0, 58.0 ],
 					"style" : "",
-					"text" : "If you're stuck with Windows and don't have the Optima font:",
+					"text" : "If you're on Windows and don't have the Optima font:",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 
@@ -3452,36 +3477,36 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "cassiel.textbrick.js",
-				"bootpath" : "~/GITHUB/cassiel/textbrick/jsui",
-				"patcherrelativepath" : "../jsui",
+				"bootpath" : "~/Documents/Max 7/Packages/textbrick/jsui",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/textbrick/jsui",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cassiel.textbrick-P.xml",
-				"bootpath" : "~/GITHUB/cassiel/textbrick/misc",
-				"patcherrelativepath" : "../misc",
+				"bootpath" : "~/Documents/Max 7/Packages/textbrick/misc",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/textbrick/misc",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cassiel.textbrick.label-clicker.maxpat",
-				"bootpath" : "~/GITHUB/cassiel/textbrick/patchers",
-				"patcherrelativepath" : "../patchers",
+				"bootpath" : "~/Documents/Max 7/Packages/textbrick/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/textbrick/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cassiel.textbrick-LM.coll",
-				"bootpath" : "~/GITHUB/cassiel/textbrick/misc",
-				"patcherrelativepath" : "../misc",
+				"bootpath" : "~/Documents/Max 7/Packages/textbrick/misc",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/textbrick/misc",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cassiel.textbrick-MS.xml",
-				"bootpath" : "~/GITHUB/cassiel/textbrick/misc",
-				"patcherrelativepath" : "../misc",
+				"bootpath" : "~/Documents/Max 7/Packages/textbrick/misc",
+				"patcherrelativepath" : "../../../../Documents/Max 7/Packages/textbrick/misc",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
@@ -3490,14 +3515,9 @@
 		"styles" : [ 			{
 				"name" : "cassiel",
 				"default" : 				{
-					"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
-					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"fontface" : [ 0 ],
-					"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
 					"fontname" : [ "Courier" ],
+					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
-					"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -3507,7 +3527,12 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"selectioncolor" : [ 0.784314, 0.145098, 0.023529, 1.0 ],
+					"patchlinecolor" : [ 0.960784, 0.827451, 0.156863, 0.9 ],
+					"fontface" : [ 0 ],
+					"elementcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
